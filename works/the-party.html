@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Party</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f5f3ef; color: #2c2c2c; font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.7; transition: background .4s, color .4s; }
+[data-theme="dark"] { --dbg: #1a1a1a; --dtxt: #f0ece6; --dmuted: #999; }
+[data-theme="dark"] body { background: var(--dbg); color: var(--dtxt); }
+[data-theme="dark"] a { color: var(--dtxt); }
+[data-theme="dark"] .category { color: var(--dmuted); }
+[data-theme="dark"] .description p { color: #bbb; }
+[data-theme="dark"] .image-grid { border-top-color: #444; }
+[data-theme="dark"] .bottom-nav { border-top-color: #444; }
+a { color: #2c2c2c; text-decoration: none; }
+.back-link { display: inline-flex; align-items: center; gap: 8px; padding: 24px; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: opacity 0.3s; }
+.back-link:hover { opacity: 0.5; }
+.back-link svg { width: 16px; height: 16px; }
+.hero { width: 100%; overflow: hidden; }
+.hero img { width: 100%; height: 72vh; object-fit: cover; object-position: center 20%; display: block; }
+.content { max-width: 860px; margin: 0 auto; padding: 60px 24px 100px; }
+.meta { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+.category { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 400; line-height: 1.2; margin-bottom: 40px; }
+.description p { font-size: 1.05rem; margin-bottom: 20px; color: #444; }
+.image-grid { margin-top: 48px; padding-top: 32px; border-top: 1px solid #ddd; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+.image-grid img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.bottom-nav { margin-top: 64px; padding-top: 32px; border-top: 1px solid #ddd; }
+.bottom-nav a { font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; transition: opacity 0.3s; }
+.bottom-nav a:hover { opacity: 0.5; }
+@media (max-width: 600px) { .hero img { height: 50vh; } .content { padding: 40px 20px 80px; } .image-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<a href="../index.html" class="back-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> Back to Gallery</a>
+<div class="hero"><img src="../images/the-party.JPG" alt="The Party"></div>
+<div class="content">
+<div class="meta"><span class="category">Charcoal on Paper</span><span class="category">2024</span></div>
+<h1>The Party</h1>
+<div class="description">
+<p>This piece is based on one of many photographs from the archive of Deep Almasri with his children, capturing a moment of intimacy and everyday joy.</p>
+<p>The repetition of such images within the archive creates a sense of warmth, yet also highlights the selective nature of memory — what is preserved and what remains unseen.</p>
+<p>Through softened forms and loose charcoal gestures, the image holds onto the feeling of connection while acknowledging the distance between lived experience and its afterimage.</p>
+</div>
+<div class="image-grid">
+    <img src="../images/33.JPEG" alt="The Party — detail">
+    <img src="../images/34.JPEG" alt="The Party — detail">
+</div>
+<div class="bottom-nav"><a href="../index.html">← Back to Gallery</a></div>
+</div>
+<script>const t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);</script>
+</body>
+</html>
